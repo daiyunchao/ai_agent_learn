@@ -66,7 +66,7 @@ class NewName {
 
 async function main() {
     let newName = await new NewName().run("中国", "男孩", "龙儿", "凤儿")
-    console.log(newName)resultToArray
+    console.log(newName)
 }
 
 main()
