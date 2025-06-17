@@ -1,0 +1,29 @@
+{
+  "name": "ai-agent-learn",
+  "version": "1.0.0",
+  "description": "AI Agent learning project with LangChain",
+  "main": "dist/index.js",
+  "scripts": {
+    "build": "tsc",
+    "start": "node dist/index.js",
+    "dev": "ts-node src/index.ts",
+    "clean": "rm -rf dist",
+    "watch": "tsc --watch"
+  },
+  "keywords": ["ai", "langchain", "typescript", "nodejs"],
+  "author": "",
+  "license": "MIT",
+  "devDependencies": {
+    "@types/node": "^20.8.0",
+    "typescript": "^5.2.2",
+    "ts-node": "^10.9.1"
+  },
+  "dependencies": {
+    "langchain": "^0.3.28",
+    "@langchain/openai": "^0.5.13",
+    "dotenv": "^16.3.1"
+  },
+  "engines": {
+    "node": ">=18.0.0"
+  }
+} 
