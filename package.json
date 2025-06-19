@@ -10,6 +10,7 @@
     "newname": "ts-node src/newName.ts",
     "newnamejson": "ts-node src/newNameJSON.ts",
     "newnamestream": "ts-node src/newNameStream.ts",
+    "tooladd": "ts-node src/toolAdd.ts",
     "clean": "rm -rf dist",
     "watch": "tsc --watch"
   },
