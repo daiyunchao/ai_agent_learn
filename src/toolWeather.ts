@@ -212,7 +212,7 @@ async function testWeatherTool() {
                 input: testCase
             });
             
-            console.log("🤖 Agent回答:", result.output);
+            console.log("🤖 Agent回答:", result.content);
             console.log("---");
         }
         
