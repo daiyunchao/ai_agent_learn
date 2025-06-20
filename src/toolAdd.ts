@@ -84,9 +84,9 @@ async function createMathAgent() {
     const agentExecutor = new AgentExecutor({
         agent,
         tools,
-        verbose: true, // 显示详细执行过程
+        verbose: false, // 显示详细执行过程
         maxIterations: 5,
-        returnIntermediateSteps: true
+        returnIntermediateSteps: false
     });
     
     return agentExecutor;
