@@ -12,6 +12,8 @@
     "newnamestream": "ts-node src/newNameStream.ts",
     "tooladd": "ts-node src/toolAdd.ts",
     "toolweather": "ts-node src/toolWeather.ts",
+    "promptsstr": "ts-node src/promptsStr.ts",
+    "promptschat": "ts-node src/promptsChat.ts",
     "clean": "rm -rf dist",
     "watch": "tsc --watch"
   },
