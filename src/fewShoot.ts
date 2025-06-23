@@ -65,6 +65,11 @@ class MagicMatch {
             ]
         ])
 
+        //打印提示词
+        console.log(await finalPrompt.invoke({
+            input: "3 🐦 4"
+        }));
+
         //调用大模型
         this.chain = finalPrompt.pipe(this.llm)
         const result = await this.chain.invoke({
