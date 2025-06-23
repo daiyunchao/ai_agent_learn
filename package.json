@@ -14,6 +14,7 @@
     "toolweather": "ts-node src/toolWeather.ts",
     "promptsstr": "ts-node src/promptsStr.ts",
     "promptschat": "ts-node src/promptsChat.ts",
+    "promptsmessage": "ts-node src/promptsMessagePlaceholder.ts",
     "clean": "rm -rf dist",
     "watch": "tsc --watch"
   },
