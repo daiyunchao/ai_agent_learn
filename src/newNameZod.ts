@@ -37,7 +37,8 @@ class NewNameZod {
         this.llm = createDeepSeekLLM();
         
         // 使用 withStructuredOutput 方法绑定 Zod 架构
-        this.structuredLlm = this.llm.withStructuredOutput(NameGenerationSchema);
+        this.structuredLlm = this.llm.withStructuredOutput(NameGenerationSchema,{
+        });
     }
 
     async run(county: string, gender: string, boyName: string, girlName: string): Promise<NameGenerationResult> {
@@ -57,7 +58,10 @@ class NewNameZod {
         `.trim());
 
         // 直接使用 structuredLlm 而不是创建链
-        const result = await this.structuredLlm.invoke(
+        const retryLlm = this.structuredLlm.withRetry({
+            stopAfterAttempts: 3,
+        })
+        const result = await retryLlm.invoke(
             await prompt.format({ 
                 county, 
                 gender, 
