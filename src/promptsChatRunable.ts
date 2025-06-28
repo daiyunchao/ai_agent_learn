@@ -48,6 +48,9 @@ const chain = RunnableParallel.from([chain1, chain2]);
 const result = await chain.invoke({
     input: "蘅芷"
 })
+//查看graph
+console.log(chain.getGraph().drawMermaid());
+
 console.log(result)
 }
 
