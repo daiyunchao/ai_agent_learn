@@ -18,6 +18,7 @@
     "promptsmessage": "ts-node src/promptsMessagePlaceholder.ts",
     "fewshoot": "ts-node src/fewShoot.ts",
     "promptsLengthSelector": "ts-node src/promptsLengthSelector.ts",
+    "promptsChatRunable": "ts-node src/promptsChatRunable.ts",
     "clean": "rm -rf dist",
     "watch": "tsc --watch"
   },
